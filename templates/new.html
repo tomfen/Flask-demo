@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Dodaj ogłoszenie</title>
+{% endblock %}
+
+{% block body %}
+<form action="/new" , method="POST">
+    <div class="form-group">
+        <label>Tytuł</label>
+        <input type="text" name="title" , id="title">
+        <label>Cena</label>
+        <input type="Number" name="price" , id="price">
+        <label>opis</label>
+        <textarea name="description" , id="description", rows="10"> </textarea>
+        <label>Zdjęcie</label>
+        <input type="file" name="photo" , id="photo">
+    </div>
+    <input type="submit" value="Dodaj">
+</form>
+
+
+{% endblock %}

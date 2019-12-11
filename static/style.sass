@@ -1,0 +1,70 @@
+$primary-color: rgb(59, 66, 136)
+$secondary-color: rgb(55, 55, 194)
+
+body
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+    margin: 0px
+    width: 100%
+
+header
+    background-color: $primary-color
+    border-bottom: 1px solid rgba($primary-color, 0.88)
+    padding: 10px 20px
+    color: white
+    h1
+        font-weight: bold
+        margin: 0px
+        margin-right: 30px
+        display: inline
+    div
+        display: inline
+        float: right
+        margin-left: 10px
+    a
+        text-decoration: none
+        color: white
+
+footer
+    color: gray
+    text-align: center
+    width: 100%
+    hr
+        margin: 10px 30px
+        border: 0
+        border-top: 1px solid #eee
+
+.content
+    padding: 20px 30px
+
+.ad-container
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto))
+    grid-auto-rows: 300px
+    grid-gap: 10px
+
+.ad
+    border: rgba(black, .10) 1px solid
+    background: rgba(black, .05)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 10px
+    a
+        text-decoration: none
+        color: $secondary-color
+    h2
+        text-align: center
+        margin: 0px
+
+.price
+    font-weight: bold
+    font-size: x-large
+
+.form-group
+    width: 80%
+    display: grid
+    grid-template-columns: max-content 1fr
+    grid-column-gap: 20px
+    grid-row-gap: 10px
+    text-align: right
+    margin: auto

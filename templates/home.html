@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Ogłoszenia</title>
+{% endblock %}
+
+{% block body %}
+<div class="ad-container">
+    {% for ad in ads %}
+    {% set link_id = ad.id %}
+    <div class="ad">
+        <h2><a href="/ad/{{link_id}}">{{ad.title}}</a></h2>
+        <div class="price">{{ad.price}}</div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

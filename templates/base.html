@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% block head %} {% endblock %}
+</head>
+
+<body>
+    <header>
+        <h1><a href="/">Ogłoszenia</a></h1>
+        <div><a href="/new">Nowe ogłoszenie</a></div>
+        {% if current_user.is_authenticated %}
+        <div><a href="/user/sign-out">Wyloguj</a></div>
+        <div><a href="/my-ads">Moje ogłoszenia</a></div>
+        <div>Zalogowano jako {{ current_user.username }}</div>
+        {% else %}
+        <div><a href="/user/sign-in">Zaloguj</a></div>
+        {% endif %}
+    </header>
+    <div class="content">
+        {% block body %} {% endblock %}
+    </div>
+    <footer>
+        <hr>
+        stopka
+    </footer>
+</body>
+
+</html>

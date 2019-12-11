@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Ogłoszenia - {{ad.title}}</title>
+{% endblock %}
+
+{% block body %}
+<h1>{{ad.title}}</h1>
+<h3>{{ad.price}}</h3>
+<div>{{owner.username}}</div>
+<div>{{ad.date_created.date()}}</div>
+<p>{{ad.content}}</p>
+{% if current_user.id==owner.id %}
+<form action="/delete/{{ad.id}}" method="POST">
+    <input type="submit" value="Usuń">
+</form>
+{% endif %}
+{% endblock %}

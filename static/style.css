@@ -1,0 +1,100 @@
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0px;
+  width: 100%;
+}
+
+header {
+  background-color: #3b4288;
+  border-bottom: 1px solid rgba(59, 66, 136, 0.88);
+  padding: 10px 20px;
+  color: white;
+}
+
+header h1 {
+  font-weight: bold;
+  margin: 0px;
+  margin-right: 30px;
+  display: inline;
+}
+
+header div {
+  display: inline;
+  float: right;
+  margin-left: 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  color: gray;
+  text-align: center;
+  width: 100%;
+}
+
+footer hr {
+  margin: 10px 30px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.content {
+  padding: 20px 30px;
+}
+
+.ad-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, auto))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  grid-auto-rows: 300px;
+  grid-gap: 10px;
+}
+
+.ad {
+  border: rgba(0, 0, 0, 0.1) 1px solid;
+  background: rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.ad a {
+  text-decoration: none;
+  color: #3737c2;
+}
+
+.ad h2 {
+  text-align: center;
+  margin: 0px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.form-group {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content 1fr;
+      grid-template-columns: -webkit-max-content 1fr;
+      grid-template-columns: max-content 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  text-align: right;
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */
